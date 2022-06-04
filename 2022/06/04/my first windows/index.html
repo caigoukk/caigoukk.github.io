@@ -6,11 +6,15 @@
   
   <title>welcome to caigoukk&#39;s world</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta property="og:type" content="website">
+  <meta name="description" content="初学windows编程的知识点总结今天刚接触windows编程，特来分享和交流一波 首先了解两个概念：窗口和句柄句柄：标志着一种资源 窗口：1.包含标题栏、菜单栏、系统菜单、最下化框，最大化框，滚动 2.主要分为客户区和非客户区 其次是窗口程序的入口函数：int WINAPI WinMain(HINSTANCE hInstance, HINSTANCE hPreInstance,LPSTR lpC">
+<meta property="og:type" content="article">
 <meta property="og:title" content="welcome to caigoukk&#39;s world">
-<meta property="og:url" content="http://caigoukk.github.io/index.html">
+<meta property="og:url" content="http://caigoukk.github.io/2022/06/04/my%20first%20windows/index.html">
 <meta property="og:site_name" content="welcome to caigoukk&#39;s world">
+<meta property="og:description" content="初学windows编程的知识点总结今天刚接触windows编程，特来分享和交流一波 首先了解两个概念：窗口和句柄句柄：标志着一种资源 窗口：1.包含标题栏、菜单栏、系统菜单、最下化框，最大化框，滚动 2.主要分为客户区和非客户区 其次是窗口程序的入口函数：int WINAPI WinMain(HINSTANCE hInstance, HINSTANCE hPreInstance,LPSTR lpC">
 <meta property="og:locale" content="en_US">
+<meta property="article:published_time" content="2022-06-04T11:23:02.297Z">
+<meta property="article:modified_time" content="2022-06-04T11:38:49.750Z">
 <meta property="article:author" content="caigoukk">
 <meta name="twitter:card" content="summary">
   
@@ -73,9 +77,7 @@
 </header>
 
       <div class="outer">
-        <section id="main">
-  
-    <article id="post-my first windows" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+        <section id="main"><article id="post-my first windows" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
   <div class="article-meta">
     <a href="/2022/06/04/my%20first%20windows/" class="article-date">
   <time class="dt-published" datetime="2022-06-04T11:23:02.297Z" itemprop="datePublished">2022-06-04</time>
@@ -159,62 +161,19 @@
     </footer>
   </div>
   
-</article>
-
-
-
+    
+<nav id="article-nav">
   
-    <article id="post-hello-world" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
-  <div class="article-meta">
-    <a href="/2022/06/02/hello-world/" class="article-date">
-  <time class="dt-published" datetime="2022-06-02T11:13:37.768Z" itemprop="datePublished">2022-06-02</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
   
-    <h1 itemprop="name">
-      <a class="p-name article-title" href="/2022/06/02/hello-world/">Hello World</a>
-    </h1>
+    <a href="/2022/06/02/hello-world/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title">Hello World</div>
+    </a>
   
+</nav>
 
-      </header>
-    
-    <div class="e-content article-entry" itemprop="articleBody">
-      
-        <p>Welcome to <a target="_blank" rel="noopener" href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a target="_blank" rel="noopener" href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a target="_blank" rel="noopener" href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a target="_blank" rel="noopener" href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/writing.html">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/server.html">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/generating.html">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://caigoukk.github.io/2022/06/02/hello-world/" data-id="cl3zsyorv0000mkv2gfb5c5vc" data-title="Hello World" class="article-share-link">Share</a>
-      
-      
-      
-    </footer>
-  </div>
   
 </article>
-
-
-
-  
 
 
 </section>
